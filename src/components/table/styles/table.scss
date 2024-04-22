@@ -1,0 +1,45 @@
+.table-container{
+    width:80VW;
+    overflow-y: auto;
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    text-align: left;
+    thead{
+      tr{
+        border: 1px solid black;
+      }
+      position: sticky;
+       top: 0;
+        z-index: 1;
+         background: white;
+        th{
+          border-collapse: collapse;
+          text-align: left;  
+          padding: 15px;
+    text-align: left;  
+    &.cursor-position{
+      cursor: pointer;
+    }  
+        }
+    }
+    tbody{
+      tr{
+        border: 1px solid black;
+      &:hover{
+        background-color: #D6EEEE !important;
+        cursor: pointer;
+      }
+      }
+      td{
+        border-collapse: collapse;
+        text-align: left;
+        padding: 10px;
+    color:black
+      }
+    }
+  }
+  &.custom-height{
+  height: 500px;
+  }
+  }
