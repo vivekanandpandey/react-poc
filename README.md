@@ -1,6 +1,6 @@
 ### `Project Overview`
 
-This Application will create Table based on data and colum provided as props each colum has a sorting functionality. Table has two type of view:
+This Application is having Table based on data and column provided as props each column has a optional sorting functionality. Table has two type of view:
 1: paginated table: it will render table based on page size
 2: verticle scrollable table: It will render complete data in  with verticle scroll
 below are the props of table component:
@@ -14,6 +14,7 @@ import { Table } from '<fromProjectPath>/src/components/table/Table';
   pagination={{ isPaginationRequired: true, pageSize: 10 }}
   sort={{ isSortRequired: true, defaultSortKey: 'columnName', defaultSortOrder: 'asc' }}
 />
+  
 Props
 
 data: Array of objects representing the data to be displayed.
@@ -111,6 +112,7 @@ import { Sorting } from '<fromProjectPath>/src/components/sorting';
 />
 Sorting Props
 data: Array of objects representing the data to be sorted.
+
 columns: Array of objects defining the columns of the table.
 onSort: Function to handle sorting.
 
@@ -130,3 +132,9 @@ totalCount: Total number of items.
 pageSize: Number of items per page.
 siblingCount: Number of sibling pages to display.
 currentPage: Current page number.
+
+Below images is the project snapshot and code coverage:
+<img width="1242" alt="Screenshot 2024-04-22 at 11 16 02 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/a53ce548-d542-4d1e-ab59-2a301448f940">
+
+<img width="1438" alt="Screenshot 2024-04-22 at 11 12 13 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/b2ab492e-3d3b-49a6-b51c-461e2141236d">
+
