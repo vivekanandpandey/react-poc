@@ -27,13 +27,13 @@ import { Table } from '<fromProjectPath>/src/components/table/Table';
   
 Props
 
- data: Array of objects representing the data to be displayed.
+ data: Mandatory props: Array of objects representing the data to be displayed.
  
- columns: Array of objects defining the columns of the table.
+ columns: Mandatory props: Array of objects defining the columns of the table.
  
- pagination: Configuration object if need  paginated data
+ pagination: Optional props : default is false : Configuration object if need  paginated data: other wise data table will render complete date with verticle scroll
  
- sort: Configuration object for sorting if sorting requird.
+ sort: Optional props : default is false : Configuration object for sorting if sorting requird.
 
 
 # Getting Started with Create React App
