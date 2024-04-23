@@ -164,7 +164,8 @@ currentPage: Current page number.
 
 Below images is the project snapshot and code coverage:
 
-<img width="1242" alt="Screenshot 2024-04-22 at 11 16 02 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/a53ce548-d542-4d1e-ab59-2a301448f940">
+<img width="1297" alt="Screenshot 2024-04-23 at 7 44 50 AM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/0cf28212-32ce-4711-bfe3-771290e44b31">
+
 
 <img width="1438" alt="Screenshot 2024-04-22 at 11 12 13 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/b2ab492e-3d3b-49a6-b51c-461e2141236d">
 
