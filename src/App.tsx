@@ -28,6 +28,7 @@ function App() {
  
   return (
       <div className="app-container">
+      <h1>Financial Asset Overview</h1>
       <Table
         data={data}
         columns={columns}
