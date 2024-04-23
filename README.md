@@ -1,46 +1,14 @@
 ### `Project Overview`
 
-This Application is having Table based on data and column provided as props each column has a optional sorting functionality. Table has two type of view:
-
-1: paginated table: it will render table based on page size
-
-2: verticle scrollable table: It will render complete data in  with verticle scroll
-
-below are the props of table component:
-
-To use these component in your project, below are the props:
-
-import { Table } from '<fromProjectPath>/src/components/table/Table';
+This Application is represting the Financial Asset Overview that allows users to view financial asset data in a table format. Users can sort the data based on different columns and navigate through multiple pages using pagination controls or complete data load one time with vertical scroll.
 
 
-  < Table
-	 
-  data={data}
-	
-  columns={columns}
-	
-  pagination={{ isPaginationRequired: true, pageSize: 10 }}
-	
-  sort={{ isSortRequired: true, defaultSortKey: 'columnName', defaultSortOrder: 'asc' }}
-	
-/>
-  
-Props
 
- data: Mandatory props: Array of objects representing the data to be displayed.
- 
- columns: Mandatory props: Array of objects defining the columns of the table.
- 
- pagination: Optional props : default is false : Configuration object if need  paginated data: other wise data table will render complete date with verticle scroll
- 
- sort: Optional props : default is false : Configuration object for sorting if sorting requird.
+### Before starting belows script Make sure latest Node is installed in your Desktop/Laptop
 
+Refer below link to install, node if dont have node in your machine:
 
-# Getting Started with Create React App
-
-# before starting below script Make sure latest Node is installed in your Desktop/Laptop
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nodejs.org/en/download
 
 ## Available Scripts
 
@@ -67,7 +35,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run coverage`
 
-npm run coverage create the test report in LCOV format.
+npm run coverage create the test report in LCOV format. once npm run coverage command complete follow below path to get report 
+<fromProjectPath/coverage/locov-report/index.html
 
 ### `npm run build`
 
@@ -112,9 +81,36 @@ This project provides a set of generic components for use in web applications. T
 - **Sorting Component**: Sort data in ascending or descending order based on specified columns.
 - **Pagination Component**: Paginate through large datasets for improved performance and user experience.
 
-## Installation
+## How to Use generic components
+
+ ## Table Component
+ 
+import { Table } from '<fromProjectPath>/src/components/table/Table';
 
 
+  < Table
+	 
+  data={data}
+	
+  columns={columns}
+	
+  pagination={{ isPaginationRequired: true, pageSize: 10 }}
+	
+  sort={{ isSortRequired: true, defaultSortKey: 'columnName', defaultSortOrder: 'asc' }}
+	
+/>
+  
+#### Table Props Description
+
+- **data**: Mandatory props: Array of objects representing the data to be displayed.
+ 
+- **columns**: Mandatory props: Array of objects defining the columns of the table.
+ 
+ - **pagination**: Optional props : default is false : Configuration object if need  paginated data: other wise data table will render complete date with verticle scroll
+ 
+ - **sort**: Optional props : default is false : Configuration object for sorting if sorting requird.
+ 
+## Sorting Component
 
 import { Sorting } from '<fromProjectPath>/src/components/sorting';
 
@@ -126,15 +122,18 @@ import { Sorting } from '<fromProjectPath>/src/components/sorting';
 	
   onSort={handleSort}
 />
-Sorting Props
 
-data: Array of objects representing the data to be sorted.
+## Sorting Props Description
 
-columns: Array of objects defining the columns of the table.
+- **data**: Array of objects representing the data to be sorted.
 
-onSort: Function to handle sorting.
+- **columns**: Array of objects defining the columns of the table.
+
+- **onSort**: Function to handle sorting.
 
 import { Pagination } from '<fromProjectPath>/src/components/pagination';
+
+## Pagination Component
 
 <Pagination
 
@@ -149,20 +148,21 @@ import { Pagination } from '<fromProjectPath>/src/components/pagination';
   currentPage={currentPage}
 />
 
-Pagination Props
+### Pagination Props Description
 
-onPageChange: Function to handle page change event.
+- **onPageChange**: Function to handle page change event.
 
-totalCount: Total number of items.
+- **totalCount**: Total number of items.
 
-pageSize: Number of items per page.
+- **pageSize**: Number of items per page.
 
-siblingCount: Number of sibling pages to display.
+- **siblingCount**: Number of sibling pages to display.
+ 
+- **currentPage**: Current page number.
 
-currentPage: Current page number.
 
 
-Below images is the project snapshot and code coverage:
+#### Below images is the project snapshot and code coverage:
 
 <img width="1297" alt="Screenshot 2024-04-23 at 7 44 50 AM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/0cf28212-32ce-4711-bfe3-771290e44b31">
 
