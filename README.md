@@ -8,7 +8,7 @@ The screenshot below showcases the main page of the application. This page prese
 
 ### Before starting belows script Make sure latest Node is installed in your Desktop/Laptop
 
-Refer below link to install, node if dont have node in your machine:
+Refer below link to install node, if dont have node in your machine:
 
 https://nodejs.org/en/download
 
