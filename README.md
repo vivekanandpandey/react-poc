@@ -2,7 +2,9 @@
 
 This Application is represting the Financial Asset Overview that allows users to view financial asset data in a table format. Users can sort the data based on different columns and navigate through multiple pages using pagination controls or complete data load one time with vertical scroll.
 
+The screenshot below showcases the main page of the application. This page presents users with a table displaying key financial asset data, including ticker, price, and asset class. Users can interact with the table by sorting columns and navigating through multiple pages using pagination controls. This user-friendly interface allows for easy exploration and analysis of financial asset information.
 
+<img width="1297" alt="Screenshot 2024-04-23 at 7 44 50 AM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/0cf28212-32ce-4711-bfe3-771290e44b31">
 
 ### Before starting belows script Make sure latest Node is installed in your Desktop/Laptop
 
@@ -91,11 +93,11 @@ import { Table } from '<fromProjectPath>/src/components/table/Table';
   < Table
 	 
   data={data}
-	
+  
   columns={columns}
-	
+  
   pagination={{ isPaginationRequired: true, pageSize: 10 }}
-	
+  
   sort={{ isSortRequired: true, defaultSortKey: 'columnName', defaultSortOrder: 'asc' }}
 	
 />
@@ -162,9 +164,7 @@ import { Pagination } from '<fromProjectPath>/src/components/pagination';
 
 
 
-#### Below images is the project snapshot and code coverage:
-
-<img width="1297" alt="Screenshot 2024-04-23 at 7 44 50 AM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/0cf28212-32ce-4711-bfe3-771290e44b31">
+#### Below images is the snapshot of the code coverage:
 
 
 <img width="1438" alt="Screenshot 2024-04-22 at 11 12 13 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/b2ab492e-3d3b-49a6-b51c-461e2141236d">
