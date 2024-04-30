@@ -165,7 +165,8 @@ import { Pagination } from '<fromProjectPath>/src/components/pagination';
 
 
 #### Below images is the snapshot of the code coverage:
-<img width="1438" alt="Screenshot 2024-04-23 at 6 22 33 PM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/5c37d5f2-fe00-41e5-a4cd-9cc639be5c59">
+
+<img width="1435" alt="Screenshot 2024-04-30 at 9 18 42 AM" src="https://github.com/vivekanandpandey/react-poc/assets/30744442/89237ad7-285d-4090-944d-77197f7e4db7">
 
 
 
